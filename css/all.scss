@@ -1,0 +1,332 @@
+$familyFontGray: #858585;
+$familyGray: #f8f8f8;
+$familyLight: #ffffff;
+$familyLine: #cccccc;
+$familyBlue: #369ece;
+$familyLightBlue: #5eb1d8;
+$familyGreen: #eef6ee;
+$familyOrange: #ea6035;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.2;
+  font-family: system-ui, sans-serif;
+  color: $familyFontGray;
+}
+
+img {
+  max-width: 30%;
+  max-height: 100%;
+}
+
+.wrap {
+  background: $familyGreen;
+}
+
+.header {
+  .headerBox {
+    max-width: 580px;
+    height: 83px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    padding: 18px 21px;
+    // padding: 25px 21px 18px;
+
+    img {
+      margin-right: auto;
+    }
+  }
+
+  font-weight: 500;
+  font-size: 14px;
+  background: $familyGray;
+
+  .orderNumber {
+    margin-bottom: 6px;
+  }
+
+  .orderStatus {
+    text-align: right;
+    color: $familyOrange;
+  }
+}
+
+.content {
+  padding: 0 12px;
+
+  .contentBox {
+    max-width: 580px;
+    margin: 0 auto;
+  }
+
+  .messageBox {
+    padding: 42px 30px;
+    text-align: center;
+
+    .title {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 32px;
+
+      span {
+        font-weight: 700;
+      }
+    }
+
+    .description {
+      font-size: 14px;
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+
+    .appreciate {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      font-size: 16px;
+      margin-top: 16px;
+      padding: 12px 33px;
+      border-radius: 10px;
+      background: $familyLightBlue;
+      color: $familyGray;
+    }
+
+    @media (min-width: 475px) {
+      a {
+        display: none;
+      }
+    }
+  }
+
+  .roomInfo {
+    padding: 24px 16px 12px;
+    background: $familyLight;
+    border-radius: 10px;
+    margin-bottom: 24px;
+
+    .roomName {
+      font-size: 24px;
+      font-weight: 600;
+      color: $familyFontGray;
+      padding-left: 8px;
+      margin-bottom: 8px;
+    }
+
+    .address {
+      display: block;
+      font-size: 14px;
+      color: $familyBlue;
+      text-decoration: underline;
+      padding-left: 8px;
+      margin-bottom: 16px;
+    }
+
+    .roomDetails {
+      li {
+        display: flex;
+        // justify-content: space-between;
+        padding: 12px;
+        list-style: none;
+        border-top: 1px solid $familyLine;
+        font-size: 14px;
+
+        div + div {
+          margin-left: auto;
+        }
+      }
+    }
+  }
+
+  .orderInfo {
+    padding: 26px 16px;
+    background: $familyLight;
+    border-radius: 10px;
+
+    .basic {
+      font-size: 14px;
+      border-bottom: 1px solid $familyLine;
+
+      & > div {
+        padding: 0 10px;
+      }
+
+      .order {
+        margin-bottom: 20px;
+
+        .number {
+          font-weight: 500;
+          margin-right: auto;
+        }
+
+        .status {
+          font-weight: 600;
+          color: $familyOrange;
+        }
+      }
+
+      .payment {
+        margin-bottom: 15px;
+
+        div + div {
+          margin-left: auto;
+        }
+      }
+
+      & > div {
+        display: flex;
+        // justify-content: space-between;
+      }
+    }
+
+    .amountList {
+      padding: 19px 10px 0;
+      font-size: 14px;
+      border-bottom: 1px solid $familyLine;
+
+      li {
+        display: flex;
+        // justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        margin-bottom: 22px;
+
+        div {
+          max-width: 50%;
+        }
+
+        div + div {
+          margin-left: auto;
+          font-weight: 600;
+        }
+
+        & ~ li div {
+          font-weight: 400;
+        }
+
+        // &:nth-child(1) div {
+        //     &:nth-child(1) {
+        //         max-width: 50%;
+        //     }
+
+        //     &:nth-child(2) {
+        //         font-weight: 600;
+        //     }
+        // }
+
+        // &:nth-last-child(1) {
+        //     margin-bottom: 0;
+        // }
+
+        .point {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          background-image: url("../img/point.svg");
+          position: relative;
+          margin-right: 6px;
+          top: 4px;
+        }
+
+        // .point {
+        //     &::before {
+        //         content: url(../img/point.svg);
+        //         position: relative;
+        //         margin-right: 6px;
+        //         top: 4px;
+        //     }
+        // }
+      }
+    }
+
+    .refund {
+      display: flex;
+      // justify-content: space-between;
+      font-weight: 600;
+      font-size: 16px;
+      padding: 16px 10px 25px;
+
+      div + div {
+        margin-left: auto;
+      }
+    }
+
+    .tips {
+      background: $familyGray;
+      border-radius: 10px;
+      padding: 16px 18px 4px 32px;
+      font-size: 14px;
+
+      li {
+        line-height: 1.5;
+        margin-bottom: 12px;
+      }
+
+      // div {
+      //     margin-bottom: 12px;
+      //     padding-left: 12px;
+      //     line-height: 1.5;
+
+      //     &:nth-last-child(1) {
+      //         margin-bottom: 0;
+      //     }
+
+      //     &::before {
+      //         content: "";
+      //         display: inline-block;
+      //         position: relative;
+      //         right: 10px;
+      //         bottom: 2px;
+      //         width: 5px;
+      //         height: 5px;
+      //         border-radius: 50%;
+      //         background: $familyFontGray;
+      //     }
+      // }
+    }
+
+    @media (min-width: 475px) {
+      .tips {
+        padding: 16px 18px 4px;
+      }
+    }
+  }
+
+  .help {
+    padding: 42px 0;
+    text-align: center;
+
+    div {
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+
+    a {
+      padding: 12px 20px;
+      display: inline-block;
+      text-decoration: none;
+      font-size: 16px;
+      background: $familyLight;
+      color: $familyBlue;
+      border-radius: 10px;
+      border: 1px solid $familyBlue;
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .wrap {
+    background: yellow;
+  } 
+}
+
+@media (prefers-color-scheme: light) {
+}

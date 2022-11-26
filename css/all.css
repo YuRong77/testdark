@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.2;
+  font-family: system-ui, sans-serif;
+  color: #858585;
+}
+
+img {
+  max-width: 30%;
+  max-height: 100%;
+}
+
+.wrap {
+  background: #eef6ee;
+}
+
+.header {
+  font-weight: 500;
+  font-size: 14px;
+  background: #f8f8f8;
+}
+.header .headerBox {
+  max-width: 580px;
+  height: 83px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 18px 21px;
+}
+.header .headerBox img {
+  margin-right: auto;
+}
+.header .orderNumber {
+  margin-bottom: 6px;
+}
+.header .orderStatus {
+  text-align: right;
+  color: #ea6035;
+}
+
+.content {
+  padding: 0 12px;
+}
+.content .contentBox {
+  max-width: 580px;
+  margin: 0 auto;
+}
+.content .messageBox {
+  padding: 42px 30px;
+  text-align: center;
+}
+.content .messageBox .title {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+.content .messageBox .title span {
+  font-weight: 700;
+}
+.content .messageBox .description {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+.content .messageBox .appreciate {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.content .messageBox a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 16px;
+  padding: 12px 33px;
+  border-radius: 10px;
+  background: #5eb1d8;
+  color: #f8f8f8;
+}
+@media (min-width: 475px) {
+  .content .messageBox a {
+    display: none;
+  }
+}
+.content .roomInfo {
+  padding: 24px 16px 12px;
+  background: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+.content .roomInfo .roomName {
+  font-size: 24px;
+  font-weight: 600;
+  color: #858585;
+  padding-left: 8px;
+  margin-bottom: 8px;
+}
+.content .roomInfo .address {
+  display: block;
+  font-size: 14px;
+  color: #369ece;
+  text-decoration: underline;
+  padding-left: 8px;
+  margin-bottom: 16px;
+}
+.content .roomInfo .roomDetails li {
+  display: flex;
+  padding: 12px;
+  list-style: none;
+  border-top: 1px solid #cccccc;
+  font-size: 14px;
+}
+.content .roomInfo .roomDetails li div + div {
+  margin-left: auto;
+}
+.content .orderInfo {
+  padding: 26px 16px;
+  background: #ffffff;
+  border-radius: 10px;
+}
+.content .orderInfo .basic {
+  font-size: 14px;
+  border-bottom: 1px solid #cccccc;
+}
+.content .orderInfo .basic > div {
+  padding: 0 10px;
+}
+.content .orderInfo .basic .order {
+  margin-bottom: 20px;
+}
+.content .orderInfo .basic .order .number {
+  font-weight: 500;
+  margin-right: auto;
+}
+.content .orderInfo .basic .order .status {
+  font-weight: 600;
+  color: #ea6035;
+}
+.content .orderInfo .basic .payment {
+  margin-bottom: 15px;
+}
+.content .orderInfo .basic .payment div + div {
+  margin-left: auto;
+}
+.content .orderInfo .basic > div {
+  display: flex;
+}
+.content .orderInfo .amountList {
+  padding: 19px 10px 0;
+  font-size: 14px;
+  border-bottom: 1px solid #cccccc;
+}
+.content .orderInfo .amountList li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-bottom: 22px;
+}
+.content .orderInfo .amountList li div {
+  max-width: 50%;
+}
+.content .orderInfo .amountList li div + div {
+  margin-left: auto;
+  font-weight: 600;
+}
+.content .orderInfo .amountList li ~ li div {
+  font-weight: 400;
+}
+.content .orderInfo .amountList li .point {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/point.svg");
+  position: relative;
+  margin-right: 6px;
+  top: 4px;
+}
+.content .orderInfo .refund {
+  display: flex;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 16px 10px 25px;
+}
+.content .orderInfo .refund div + div {
+  margin-left: auto;
+}
+.content .orderInfo .tips {
+  background: #f8f8f8;
+  border-radius: 10px;
+  padding: 16px 18px 4px 32px;
+  font-size: 14px;
+}
+.content .orderInfo .tips li {
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+@media (min-width: 475px) {
+  .content .orderInfo .tips {
+    padding: 16px 18px 4px;
+  }
+}
+.content .help {
+  padding: 42px 0;
+  text-align: center;
+}
+.content .help div {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.content .help a {
+  padding: 12px 20px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  background: #ffffff;
+  color: #369ece;
+  border-radius: 10px;
+  border: 1px solid #369ece;
+}
+
+@media (prefers-color-scheme: dark) {
+  .wrap {
+    background: yellow;
+  }
+}/*# sourceMappingURL=all.css.map */
